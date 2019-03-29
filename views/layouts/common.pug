@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    title NodeJS Project
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js')
+  body
+    
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='/') NodeJS
+        ul.nav.navbar-nav
+          li.active
+            a(href='/') Home
+          li
+            a(href='/users') Users
+          li
+            a(href='/users/create') Create user
+        form.navbar-form.navbar-left(action="/users/search")
+          .form-group
+            input.form-control(type='text', placeholder='Name', name='name')
+          button.btn.btn-default(type='submit') Search
+    block content
