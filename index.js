@@ -1,3 +1,6 @@
+//use dotenv for environment variables
+require('dotenv').config();
+
 var express = require('express');
 var bodyParse = require('body-parser');
 var cookieParser = require('cookie-parser');
@@ -14,7 +17,7 @@ const port = 3000;
 
 app.use(bodyParse.json());
 app.use(bodyParse.urlencoded({ extended: true }));
-app.use(cookieParser('dafifwoeifadf'));
+app.use(cookieParser(process.env.SESSION_SECRET));
 
 app.use(express.static('public'));
 
