@@ -20,8 +20,11 @@ html(lang='en')
             a(href='/users') Users
           li
             a(href='/users/create') Create user
+
         form.navbar-form.navbar-left(action="/users/search")
           .form-group
             input.form-control(type='text', placeholder='Name', name='name')
           button.btn.btn-default(type='submit') Search
+        if user
+          p= user.name  
     block content

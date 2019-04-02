@@ -2,11 +2,9 @@
   "users": [
     {
       "name": "Canh",
-      "id": "TsN1b7zkf"
-    },
-    {
-      "name": "Canh",
-      "id": "OH1nm-I7W"
+      "id": "TsN1b7zkf",
+      "email": "test@gmail.com",
+      "password": "202cb962ac59075b964b07152d234b70"
     },
     {
       "name": "Thanh",
@@ -21,12 +19,13 @@
       "id": "abknABE4d"
     },
     {
-      "name": "",
-      "id": "0dQ-gdANb"
-    },
-    {
       "name": "My",
       "id": "_XYrulp8R"
+    },
+    {
+      "name": "Nhung",
+      "phone": "0908396858",
+      "id": "FLX2xlEAC"
     }
   ]
 }
