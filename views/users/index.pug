@@ -3,11 +3,14 @@ block content
     h1 Users
     table.table
         tr
+            th Avarta
             th Name
             th Phone
             th Actions
         each user in users
             tr
+                td
+                    img(src=user.avatar, width='32')
                 td= user.name
                 td=user.phone
                 td

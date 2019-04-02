@@ -4,8 +4,9 @@ block content
   if errors
     each error in errors
       .alert.alert-danger= error
-  form.navbar-form.navbar-left(action='/users/create' method='POST')
+  form.navbar-form.navbar-left(action='/users/create' method='POST', enctype="multipart/form-data")
     .form-group
       input.form-control(type='text', placeholder='Name', name='name', value=values?values.name:'')
       input.form-control(type='text', placeholder='Phone Number', name='phone', value=values?values.phone:'')
+      input.form-control(type='file', name='avatar')
       button.btn.btn-default() Submit

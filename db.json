@@ -4,38 +4,14 @@
       "name": "Canh",
       "id": "TsN1b7zkf",
       "email": "test@gmail.com",
-      "password": "202cb962ac59075b964b07152d234b70"
-    },
-    {
-      "name": "Thanh",
-      "id": "CApX0oGHi"
+      "password": "202cb962ac59075b964b07152d234b70",
+      "avatar": "uploads/595e4560bc6063b1c95b20a99868fc9a"
     },
     {
       "name": "Binh",
-      "id": "DLLDzRFd4"
-    },
-    {
-      "name": "Chien",
-      "id": "abknABE4d"
-    },
-    {
-      "name": "My",
-      "id": "_XYrulp8R"
-    },
-    {
-      "name": "Nhung",
-      "phone": "0908396858",
-      "id": "FLX2xlEAC"
-    },
-    {
-      "name": "Quy",
       "phone": "0909398198",
-      "id": "z4zzHscg0"
-    },
-    {
-      "name": "Ngoc",
-      "phone": "0909398198",
-      "id": "K_ZjTkZz5"
+      "id": "CH3a49NKK",
+      "avatar": "uploads/b3ef0aed6d6090ea352cd5ad06aada09"
     }
   ],
   "products": [
