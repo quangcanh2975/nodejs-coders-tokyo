@@ -4,9 +4,10 @@ html(lang='en')
     title NodeJS Project
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js')
+    link(rel='stylesheet', type='text/css', href='/style/product.css')
   body
     
     nav.navbar.navbar-inverse
@@ -19,7 +20,9 @@ html(lang='en')
           li
             a(href='/users') Users
           li
-            a(href='/users/create') Create user
+            a(href='/users/create') Create 
+          li  
+            a(href='/products') Products
 
         form.navbar-form.navbar-left(action="/users/search")
           .form-group
