@@ -4,13 +4,14 @@ block content
     .card-columns
         each product in products
             .card
-                img.card-img-top(src='https://staticshop.o2.co.uk/product/images/iphone-x-space-grey-sku-header.png?cb=25dc5afb0412fc40a28aa29d82cb53d0', alt='Products image')
+                img.card-img-top(src='https://static.toiimg.com/thumb/msid-61654288,width-640,resizemode-4/61654288.jpg', alt='Products image')
                 .card-body
                 h5.card-title #{product.name}
                 p.card-text
                     | #{product.decription}
                 p.card-text
                     small.text-muted #{product.id}
+                a.btn.btn-primary(href='/cart/add/'+product.id) Add to cart
     nav(aria-label='...')
         ul.pagination.justify-content-center
             li.page-item

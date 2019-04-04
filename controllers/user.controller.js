@@ -1,5 +1,5 @@
 const shortid = require('shortid');
-var db = require('../db'); // không cần thay đổi path vì require trong routes
+var db = require('../db');
 
 
 module.exports.index = function (req, res) {
