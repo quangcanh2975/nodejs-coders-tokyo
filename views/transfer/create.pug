@@ -1,0 +1,14 @@
+extends ../layouts/common
+block content
+    h1 New transfer
+    h2 Hey, don't be an attack victim
+    form.navbar-form.navbar-left(method='POST')
+        input(type="hidden" name="_csrf" value=csrfToken)
+        .form-group
+        label(for="accountId") Account
+        input.form-control(type='text', name='accountId')
+        .form-group
+        label(for="amount") Amount
+        input.form-control(type='number', name='amount')
+        
+        button.btn.btn-primary() Transfer

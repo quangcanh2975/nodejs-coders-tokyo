@@ -1,7 +1,9 @@
 var md5 = require('md5');
 var db = require('../db'); // không cần thay đổi path vì require trong routes
 module.exports.loginForm = function (req, res) {
-    res.render('auth/login');
+    res.render('auth/login',{
+        csrfToken: req.csrfToken()
+    });
 }
 module.exports.postLogin = function (req, res) {
     var user = db.get('users').find({email: req.body.email}).value();
